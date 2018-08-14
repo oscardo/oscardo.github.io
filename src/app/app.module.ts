@@ -13,6 +13,7 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { SearchComponent } from './pages/search/search.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SearchComponent } from './pages/search/search.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    SearchComponent
+    SearchComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

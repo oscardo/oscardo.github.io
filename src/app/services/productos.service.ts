@@ -50,6 +50,7 @@ export class ProductosService {
       const tituloLowerCase = prod.titulo.toLocaleLowerCase();
       const categoriaLowerCase = prod.categoria.toLocaleLowerCase();
       if ( categoriaLowerCase.indexOf( termino ) >= 0 || tituloLowerCase.indexOf( termino ) >= 0 ) {
+        // npm i http-server
         this.productoFiltrado.push ( prod );
       }
     });

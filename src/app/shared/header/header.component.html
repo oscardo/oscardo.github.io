@@ -16,22 +16,27 @@
 	<a routerLink="home">{{ _servicio.info.titulo }}</a></h1>
     <nav class="rk-navigation">
       <ul class="rk-menu">
-        <li routerLinkActive="" class="rk-menu__item"><a routerLink="" class="rk-menu__link">Home</a>
+        <li routerLinkActive="" class="rk-menu__item">
+          <a routerLink="" class="rk-menu__link">Home</a>
         </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="item" class="rk-menu__link">Portfolio</a>
+        <li routerLinkActive="active" class="rk-menu__item">
+          <a routerLink="item" class="rk-menu__link">Portfolio</a>
         </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">Blog</a>
+        <li routerLinkActive="active" class="rk-menu__item">
+          <a href="https://oscardev.wordpress.com/" target="_blank" class="rk-menu__link">Blog</a>
         </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a href="#0" class="rk-menu__link">Pages</a>
+        <li routerLinkActive="active" class="rk-menu__item">
+          <a href="#0" class="rk-menu__link">{{_servicio.info.mas}}</a>
           <nav class="rk-menu__sub">
             <ul class="rk-container">
-              <li class="rk-menu__item"><a routerLink="about" class="rk-menu__link">About</a></li>
-              <li class="rk-menu__item"><a href="documentation.html" class="rk-menu__link">Documentation</a></li>
-              <li class="rk-menu__item"><a href="design-styles.html" class="rk-menu__link">Design Styles</a></li>
-            </ul>
+              <li class="rk-menu__item"><a routerLink="about" class="rk-menu__link">{{_servicio.info.sobre_mi}}</a></li>
+              <li class="rk-menu__item"><a href="https://github.com/oscardo/" target="_blank" class="rk-menu__link">{{_servicio.info.mis_proyectos}}</a></li>
+              <li class="rk-menu__item"><a href="/src/app/archivos/CVOscarOrtiz.pdf" target="_blank" class="rk-menu__link">{{_servicio.info.hoja_vida}}</a></li>
+            </ul> 
           </nav>
         </li>
-        <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contact Us</a>
+        <li class="rk-menu__item">
+          <a routerLink="contacto" class="rk-menu__link">{{_servicio.info.contacto}}</a>
         </li>
       </ul>
       <div class="rk-search">

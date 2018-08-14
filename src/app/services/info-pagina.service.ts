@@ -33,7 +33,7 @@ equipo: any[] = [];
     this.http.get('https://angular-html-b9222.firebaseio.com/equipo.json')
     .subscribe( (respuesta: any[]) => {
       this.equipo = respuesta;
-      console.log(respuesta);
+      // console.log(respuesta);
     });
   }
 
