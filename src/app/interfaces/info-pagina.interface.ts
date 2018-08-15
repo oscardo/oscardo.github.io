@@ -11,5 +11,6 @@ export interface InfoPagina {
   mas?: string;
   hoja_vida?: string;
   mis_proyectos?: string;
+  portafolio?: string;
   equipo_trabajo?: any[];
 }
