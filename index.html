@@ -462,8 +462,8 @@
     <div id="contact" class="section db">
         <div class="container">
             <div class="section-title text-left">
-                <h3>Contact</h3>
-                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
+                <h3>Contact me</h3>
+                <p>If you need know more, write me a message, for suggest, congrats, f*ck comment, or any words this is way</p>
             </div><!-- end title -->
 
             <div class="row">
@@ -510,12 +510,12 @@
             <div class="footer-distributed">
                 <div class="footer-left">
                     <p class="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">About</a>
-                        <a href="#">Faq</a>
-                        <a href="#">Contact</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact me</a>
                     </p>
                     <p class="footer-company-name">All Rights Reserved. <a>1983-</a><a id="yearAc"></a> Un total de: <a id="diasAc"></a> Dias
                     <br>Design By : <a target="_blank" href="https://html.design/">html design</a></p>
@@ -531,16 +531,36 @@
         let year = d.getFullYear();
         document.getElementById("yearAc").innerHTML = year.toString();
         //mm/dd/yyyy
-        let fecha1 = new Date("11/03/1983");
+        //let fecha1 = new Date("11/03/1983");
         let diferencia = d.getTime() - fecha1.getTime();
 
-        let diasDeDiferencia = diferencia / 1000 / 60 / 60 / 24;
-        console.log("Dias: "); // resultado: 357
-        console.log(diasDeDiferencia); // resultado: 357
-        diasDeDiferencia = Math.round(diasDeDiferencia)
-        document.getElementById("diasAc").innerHTML = diasDeDiferencia.toString();
+        //let diasDeDiferencia = diferencia / 1000 / 60 / 60 / 24;
+        //console.log("Dias: "); // resultado: 357
+        //console.log(diasDeDiferencia); // resultado: 357
+        //diasDeDiferencia = Math.round(diasDeDiferencia)
+        //document.getElementById("diasAc").innerHTML = diasDeDiferencia.toString();
     </script>
 
+    <script>
+        // Fechas de ejemplo
+        var fecha1 = new Date('1983-11-03');
+        var fecha2 = new Date();
+
+        // Calcula la diferencia en milisegundos
+        var     diferenciaMilisegundos = fecha1 - fecha2;
+
+        // Convierte la diferencia en días
+        var diferenciaDias = diferenciaMilisegundos / (1000 * 60 * 60 * 24);
+
+        console.log('La diferencia en días es: ' + diferenciaDias);
+
+          //const days = daysBetweenDates("1983-11-03");
+          <!-- 
+            console.log("days");
+          console.log(days);
+          document.getElementById("diasAc").innerHTML = days.toString(); 
+        -->
+    </script>
 
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
