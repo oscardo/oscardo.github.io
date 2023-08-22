@@ -68,7 +68,7 @@
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">Experience</a>
+              <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
             </li>
         	<!-- 
             <li class="nav-item">
@@ -509,7 +509,7 @@
             <!--
                 https://docs.google.com/forms/d/1pqcBjCktFile4BQqDZXw8InHRq06mcUkCzhfi5Qfyfs/prefill
 
-                <form name="gform" id="gform" enctype=" text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                 First name:<br>
                 <input type="text" name="entry.810989529" id="entry.810989529"><br>
                 Last name:<br>
@@ -519,44 +519,41 @@
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
             -->
-
             <div class="row">
                 <div class="col-md-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="gform" name="gform" enctype="text/plain" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSeNpE1eRbnuQ5hssS8ci5oW7b_7CRORnWi0ajVPao3Ew9pp9Q/viewform?usp=sf_link">
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input class="form-control" id="entry.709151884" name="entry.709151884" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
+										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="entry.1615420744" name="entry.1615420744" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
+										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="entry.1171613270" name="entry.1171613270" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
+										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<textarea class="form-control" id="entry.819726116" name="entry.819726116" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="clearfix"></div>
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button data-target="_blank" id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
+									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
 								</div>
 							</div>
 						</form>
                     </div>
                     
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
                  </div> <!-- end col -->
              </div> <!-- end row -->
 
@@ -572,7 +569,6 @@
                         <a href="#about">About</a>
                         <a href="#services">Services</a>
                         <a href="#portfolio">Portfolio</a>
-                        <a href="#testimonials">Experience</a>
                         <!-- <a href="#blog">Blog</a> -->
                         <a href="#contact">Contact me</a>
                     </p>
@@ -626,15 +622,6 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
-    <script type="text/javascript">var submitted=false;</script>
-    <script type="text/javascript">
-        $('#gform').on('submit', function(e) {
-        $('#gform *').fadeOut(2000);
-        $('#gform').prepend('Your submission has been processed...');
-        });
-    </script>
 
 </body>
 </html>
