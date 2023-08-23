@@ -1,0 +1,49 @@
+#creamos esta linea para que el buscador busque cada n tiempo 
+User-agent: bingbot
+Crawl-delay: 3600
+
+User-agent: Googlebot
+Crawl-delay: 3600
+
+#Google bot
+User-agent: Googlebot
+Disallow: /nogooglebot/
+Disallow: /*.docx$
+
+User-agent: AdsBot-Google
+Allow: /
+Disallow: /*.docx$
+
+User-agent: Googlebot-news
+Allow: /
+Disallow: /*.docx$
+
+User-agent: Slurp
+Allow: /
+Disallow: /*.docx$
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /*.docx$
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /*.docx$
+
+User-agent: Qwantify
+Allow: /
+Disallow: /*.docx$
+
+User-agent: StartPage
+Allow: /
+Disallow: /*.docx$
+
+User-agent: *
+Allow: /
+Disallow: /*.docx$
+
+#evitar que podamos acceder a este tipo de archivos 
+User-agent: Googlebot
+Disallow: /*.docx$
+
+Sitemap: https://oscardo.github.io/sitemap.xml
