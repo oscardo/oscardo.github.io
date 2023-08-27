@@ -1,0 +1,15 @@
+#languageSelect {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: url('flecha_select.png') no-repeat right center;
+    background-size: 20px;
+    width: 200px;
+}
+
+#languageSelect option {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
