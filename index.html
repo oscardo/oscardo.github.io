@@ -38,6 +38,12 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("W4fr_nrgBJy8iu52N"); // Reemplaza con tu User ID de EmailJS
+        })();
+    </script>
 </head>
 <body id="page-top" class="politics_version">
 
@@ -513,61 +519,80 @@
 			
 		</div>
 	</div>
-     -->
+     
+
+     <form id="contact-form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center">
+                <button id="sendMessageButton" class="sim-btn btn-hover-new" type="submit">Send Message</button>
+            </div>
+        </div>
+    </form>
+    -->
 
     <div id="contact" class="section db">
         <div class="container">
             <div class="section-title text-left">
                 <h3>Contact me</h3>
                 <p>If you need know more, write me a message, for suggest, congrats, f*ck comment, or any words this is way</p>
-            </div><!-- end title -->
-            <!--
-                https://docs.google.com/forms/d/1pqcBjCktFile4BQqDZXw8InHRq06mcUkCzhfi5Qfyfs/prefill
-
-                <form name="gform" id="gform" enctype=" text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                First name:<br>
-                <input type="text" name="entry.810989529" id="entry.810989529"><br>
-                Last name:<br>
-                <input type="text" name="entry.463380756" id="entry.463380756">
-                <input type="submit" value="Submit">
-                </form>
-
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-            -->
+            </div>
 
             <div class="row">
                 <div class="col-md-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="gform" name="gform" enctype="text/plain" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSeNpE1eRbnuQ5hssS8ci5oW7b_7CRORnWi0ajVPao3Ew9pp9Q/viewform?usp=sf_link">
+                        <!-- <form id="gform" name="gform" enctype="text/plain" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSeNpE1eRbnuQ5hssS8ci5oW7b_7CRORnWi0ajVPao3Ew9pp9Q/viewform?usp=sf_link"> -->
+                        <form id="gform" name="gform"> 
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input class="form-control" id="entry.709151884" name="entry.709151884" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
+										<!-- <input class="form-control" id="name" name="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name."> -->
+                                        <input class="form-control" id="oscardo_name" type="text" placeholder="Your Name" required>
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="entry.1615420744" name="entry.1615420744" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
+										<!-- <input class="form-control" id="email" name="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address."> -->
+                                        <input class="form-control" id="oscardo_email" type="email" placeholder="Your Email" required>                       
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="entry.1171613270" name="entry.1171613270" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
+										<!-- <input class="form-control" id="tel" name="tel" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number."> -->
+                                        <input class="form-control" id="oscardo_phone" type="tel" placeholder="Your Phone">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<textarea class="form-control" id="entry.819726116" name="entry.819726116" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+										<!-- <textarea class="form-control" id="entry.819726116" name="entry.819726116" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea> -->
+                                        <textarea class="form-control" id="oscardo_message" placeholder="Your Message" required></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="clearfix"></div>
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button data-target="_blank" id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
+									<!-- <button data-target="_blank" id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button> -->
+                                    <button id="sendMessageButton" class="sim-btn btn-hover-new" type="submit">Send Message</button>
 								</div>
 							</div>
 						</form>
+
                     </div>
                     
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
@@ -643,6 +668,7 @@
     <script src="js/jquery.vide.js"></script>
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+<!--
     <script type="text/javascript">var submitted=false;</script>
     <script type="text/javascript">
         $('#gform').on('submit', function(e) {
@@ -650,6 +676,7 @@
         $('#gform').prepend('Your submission has been processed...');
         });
     </script>
+-->
 
     <script>
     $(document).ready(function() {
@@ -669,6 +696,29 @@
     });
     </script>
 
+
+    <script>
+        document.getElementById('gform').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe por defecto
+    
+        // Captura los valores del formulario
+        let templateParams = {
+            name: document.getElementById('oscardo_name').value,
+            email: document.getElementById('oscardo_email').value,
+            phone: document.getElementById('oscardo_phone').value,
+            message: document.getElementById('oscardo_message').value
+        };
+    
+        // Envía el correo a través de EmailJS
+        emailjs.send("Gmail", "template_d7xwjaf", templateParams)
+            .then(function(response) {
+                alert("Mensaje enviado con éxito!");
+                document.getElementById('gform').reset(); // Limpia el formulario
+            }, function(error) {
+                alert("Error al enviar el mensaje: " + JSON.stringify(error));
+            });
+    });
+    </script>
 
 </body>
 </html>
